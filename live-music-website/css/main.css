@@ -1,0 +1,1222 @@
+/* global styling */
+html {
+    box-sizing: border-box;
+    font-size: 10px;
+}
+/* so that embedded content we include will innherit border-box attribute */
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+}
+
+h1, h2, h3, p, a {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    line-height: 1.35;
+    font-size: 1.6rem;
+    font-weight: 200;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;  
+}
+
+iframe {
+    max-width: 100%;
+}
+h1, h2, h3, h4, li{
+    padding: 0;
+    margin: 0;
+    font-family: 'Nunito', sans-serif;
+}
+
+p, a, button {
+    font-family: 'Rubik', sans-serif;
+}
+
+video{ 
+    max-width: 100%;
+    padding: 1rem;
+}
+
+iframe {
+    max-width: 100%;
+    padding: 1rem;
+    border: none;
+}
+/*-----------------------------------BUTTONS----------------------------*/
+.btn {
+    background-color: #ff9f00;
+    border-radius: 2rem;
+    padding: 1rem 0;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 1rem;
+}
+
+a .btn {
+    text-decoration: none;
+    color: #001a33;
+    cursor: pointer;
+    padding: 1rem 0;
+    
+}
+
+a .btn:hover {
+    background-color: #66ffc5;
+}
+/*-------------------------------END OF BUTTONS ---------------------------*/
+/*------------------------------HOME PAGE -------------------------------*/
+.site-header {
+    width: 100%;
+    background-color: #001a33;
+}
+
+.site-nav ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    flex-wrap: wrap;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+    padding-top: 1.2rem;
+    font-size: 1.5rem;
+}
+
+.site-header-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.site-nav li {
+    padding: 3rem 1rem 1rem 1rem;
+    flex: 30% 0 0;
+}
+
+.site-nav li a {
+    color: #d9d9d9;
+
+}
+
+.site-nav li a:hover {
+    color: #ff9f00;
+}
+
+.site-nav ul li a.current {
+    color: #b26f00;
+}
+
+.site-logo img {
+    height: 20vh;
+    width: 50vw;
+    padding: 0;
+    margin: 0;
+}
+
+.banner-image {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    background-image: url(../assets/Optimised-Gorilla/banner-image.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 35vh;
+    
+}
+
+.banner-text h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.background-color {
+    background-color: #d9d9d9;
+}
+
+.accessibility {
+    display: flex;
+    justify-content: center;
+    padding: 0.5em;
+    background: #011222;
+   
+   
+}
+
+.accessibility a {
+    text-decoration: none;
+    color:#fff;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.accessibility a:hover {
+    background-color: #66ffc5;
+}
+
+.intro-info {
+    padding: 5rem;
+}
+
+.intro-info p {
+    font-size: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    .site-header-content {
+        max-width: 1000px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    .site-nav ul {
+        flex-wrap: nowrap;
+        padding-top: 3rem;
+    }
+
+    .site-nav ul li {
+        flex: auto;
+        padding-left: 2.5rem;
+        padding-top: 1rem;
+        font-size: 1.5rem;
+    }
+
+    .site-logo img {
+        width: 17vw;
+        height: 15vh;
+        padding-top: 0;
+        margin: 0;
+    }
+
+    .intro-info {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        padding: 9rem;
+    }
+
+    .intro-info p {
+        color: #001a33;
+        font-size: 3.5rem;
+        text-align: center;
+    }
+
+    .what-we-do {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .site-footer {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .banner-image {
+        height: 40vh;
+    }
+
+}
+/*-------------------- HOME MUSIC AND FOOD SECTION ---------------*/
+.music-food {
+    background-color: #001a33;
+    color: #cccccc;
+    padding: 2rem;
+}
+
+.music-food h2, .music-food h3 {
+    text-align: center;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: #d9d9d9;
+}
+
+.music-food h2 {
+    font-size: 3rem;
+}
+
+.music-food ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.music-video {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.home-music-description {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
+
+.home-music-description p {
+    padding: 1.5rem 1rem;
+    font-size: 1.8rem;
+}
+
+.home-music-description a {
+    margin-bottom: 2rem;
+}
+
+.food-section-home {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.food-section-home p {
+    padding: 1.5rem 1rem;
+    font-size: 1.8rem;
+}
+
+.food-section-home a {
+    margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 780px) {
+    .music-home-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .music-video {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1rem;
+        align-items: center;
+    }
+    .home-band-image {
+        grid-column: 1 / 5;
+        justify-content: stretch;
+    }
+
+    .home-band-video {
+        grid-column: 5 / 9;
+    }
+    
+    .home-music-description p {
+        text-align: center;
+        font-size: 2.2rem;
+        padding: 1rem 5rem;
+    }
+
+    .home-music-description a .btn {
+        font-size: 1.7rem;
+    }
+
+    .food-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .food-section-home {
+        flex-wrap: nowrap;
+    }
+
+    .food-section-home img {
+        width: 50%;
+    }
+
+    .food-section-home p {
+        font-size: 1.8rem;
+        padding: 0 12rem 0 2rem;
+    }
+
+
+    .food-section-home a .btn{
+        padding: 0 5rem;
+        font-size: 2rem;
+        margin: 0;
+    }
+    
+    .music-food h3 {
+        font-size: 3rem;
+    }
+}
+/* ------------------------- HOME RECOMMENDATIONS SECTION -------------*/
+.we-recommend h3{
+    text-align: center;
+    padding: 2rem;
+    font-size: 2rem;
+    color: #001a33;
+}
+
+.home-sections-item {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.home-sections-item a {
+    align-self: center;
+    width: 50%;
+    padding: 1rem;
+}
+
+.home-sections img {
+    max-width:100%;
+    height: auto;
+    margin: 1rem;
+}
+
+.home-sections p {
+    padding: 1rem;
+    text-align: center;
+}
+
+.home-sections ul {
+    color: #001a33;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.our-recommendations {
+    background-color: #cccccc;
+}
+
+.what-we-do-item ul li {
+    color: #001a33;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 600px) {
+    .home-sections {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+    }
+
+    .home-sections-item {
+        justify-content: flex-start;
+        flex: 30%;
+    }
+
+    .home-sections-item ul {
+        margin-right: 1rem;
+    }
+
+    .home-sections-item ul li {
+        padding: 0.5rem;
+    }
+
+    .home-sections-item a {
+        width: 100%;
+        align-self: flex-start;
+    }
+    
+    .we-recommend h3 {
+        font-size: 3rem;
+    }
+}
+/* site footer styling */
+.footer {
+    background-color: #001a33;
+}
+
+.footer p {
+    text-align: center;
+    padding: 2rem;
+}
+
+.footer a {
+    color: #d9d9d9;
+    text-decoration: underline;
+}
+
+.footer a:hover {
+    color: #ffb732;
+}
+
+.site-footer {
+    color: #d9d9d9;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.site-footer p {
+    padding: 1.5rem;
+}
+
+.site-footer ul {
+    padding-top: 1rem;
+    list-style-type: none;
+}
+.site-footer ul li {
+    padding: 0.3rem;
+}
+
+.site-footer li a:hover {
+    color: #ffb732;
+}
+
+.site-footer ul li a.current {
+    color: #b26f00;
+}
+
+.site-footer a:hover {
+    color: #ffb732;
+}
+
+
+footer h4 {
+    color: #b26f00;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.site-footer a {
+    color: #d9d9d9;
+    text-decoration: none;
+}
+/*-----------------------------END OF HOME PAGE ---------------------------*/
+/*--------------------------live music page ------------------------------- */
+.live-music-venues {
+    background-color: #001a33;
+}
+
+.live-music-venues h2 {
+    color: #d9d9d9;
+    font-size: 2.5rem;
+    padding: 3rem;
+    text-align: center;
+
+}
+.live-music-venues ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.venues {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.venue-item {
+    position: relative;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+.venue-item p {
+    position: absolute;
+    bottom: 18px;
+    left: 20px;
+    text-align: center;
+    color: #001a33;
+    font-size: 1.3rem;
+    padding: 1rem;
+}
+
+@media screen and (min-width: 790px) {
+    .content-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .venue-item {
+        flex: 33%;
+    }
+
+    .venues {
+        flex-wrap: nowrap;
+    }
+}
+
+.our-recommendations {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.our-recommendations p {
+    text-align: center;
+    font-size: 2rem;
+    margin: 2rem 1rem 1rem 1rem;
+    color: #001a33;
+}
+
+.our-recommendations img {
+    margin: 1rem 0 1rem 0;
+    width: 75%;
+    align-self: center;
+}
+
+.our-recommendations a {
+    width: 50%;
+    align-self: center;
+    padding-bottom: 1rem;
+    text-align: center;
+}
+
+.food-recommendations {
+    background-color: #cccccc;
+}
+
+.food-recommendations h3 {
+    color: #001a33;
+    font-size: 2rem;
+    text-align: center;
+    padding: 2rem;
+}
+
+@media screen and (min-width: 760px) {
+    .our-recommendations {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    .our-recommendations p {
+        grid-column: 1 / 3;
+        text-align: left;
+    }
+
+    .our-recommendations p.btn {
+        text-align: center;
+    }
+
+    .our-recommendations img {
+        grid-column: 4 / 6;
+        grid-row: 1 / 3;
+        width: 100%;
+    }
+
+    .our-recommendations a {
+        grid-column: 1 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+}
+/* ----------------------------End of live music page ---------------------*/
+/* ------------------------------ABOUT US PAGE---------------------------- */
+.about-us-section {
+    background-color: #001a33;
+    color: #cccccc;
+}
+
+.about-us {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+
+.about-us h2 {
+    padding: 1rem;
+    font-size: 2rem;
+}
+
+.about-us p {
+    padding: 0 0.5rem 0 0.5rem;
+}
+
+.about-us .btn {
+    padding: 0.8rem;
+    margin: 1rem;
+}
+.about-us img {
+    padding: 1rem 0 1rem 0;
+}
+.services {
+    background-color: #cccccc;
+}
+
+.about-us-services {
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: center;
+    color: #001a33;
+}
+
+.about-us-services h3 {
+    margin: 2rem 0 2rem 0;
+    font-size: 2.5rem;
+}
+
+.about-us-services img {
+    margin: 0 0 2rem 0;
+    padding: 0 1rem;
+}
+
+.boxes {
+    margin: 1rem;
+    padding-bottom: 4rem;
+}
+
+.box-item h4 {
+    font-size: 1.8rem;
+    padding-top: 2rem;
+    margin: 0.5rem 0 0.5rem 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+.box-item p {
+    padding: 1rem;
+}
+
+@media screen and (min-width: 760px) {
+    .about-us {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        justify-content: center;
+    }
+
+    .about-us h2 {
+        grid-column: 1 / 3;
+        grid-row: 1 / 2;
+    }
+
+    .about-us p {
+        grid-column: 1 / 3;
+    }
+
+    .about-us a {
+        grid-column: 1 / 3;
+        width: 80%;
+        margin-right: 2rem;
+    }
+
+    .about-us img {
+        grid-column: 3 / 5;
+        grid-row: 1 / 3;
+        display: inline;
+    }
+
+    .about-us-services {
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-us-services h3 {
+        flex: 50%;
+    }
+
+    .about-us-services h3 {
+        align-self: center;
+        text-align: center;
+        font-size: 3rem;
+
+    }
+    
+    .about-us-services img {
+        margin-top: 1rem;
+    }
+
+    .boxes {
+        display: flex;
+        text-align: left;
+    }
+    .box-item {
+        flex: 33.33%;
+    }
+}
+/*---------------------------PLACES TO EAT PAGE-----------------------*/
+.food-photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1rem;  
+}
+
+.food-container ul {
+    list-style-type: none;
+    padding: 1rem;
+    margin: 0;
+}
+
+.food-photos img {
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+.cheese {
+    background-color: #001a33;
+    color: #cccccc;
+}
+
+.food-location h3 {
+    padding: 1rem;
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.location-style {
+    padding: 0 0 1rem 0;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.food-location.jerk {
+    color: #001a33;
+}
+
+.food-location p {
+    padding: 2rem;
+}
+
+.food-container .food-description {
+    text-align: left;
+}
+
+.food-container a {
+    display: flex;
+    justify-content: center;
+}
+
+.food-container a .btn {
+    padding: 1rem 3rem;
+    margin: 3rem 0;
+}
+
+@media screen and (min-width: 600px) {
+    .food-container {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .food-container ul li {
+        margin-right: 1rem;
+        flex: 33%;
+    }
+
+    .food-location p {
+        padding: 1rem 6rem;
+    }
+
+    .food-photos img {
+        height: 100%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .food-container ul {
+        flex-wrap: nowrap;
+    }
+    .food-container .food-description {
+        text-align: center;
+    }
+
+    .food-photos img {
+        max-height: 100%;
+    }
+
+    .food-location p {
+        padding-right: 10rem;
+    }
+}
+/*--------------------------------CONTACT US PAGE ------------------------*/
+.contact-form-container {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+}
+
+.contact-form-container h2 {
+    font-size: 3rem;
+    color: #001a33;
+    text-align: center;
+    padding: 2rem;
+}
+
+.contact-form-container p {
+    padding: 0 1rem 1rem 1rem;
+}
+
+.form-group ul {
+    list-style-type: none;
+    margin: 0 0 0.8rem;
+    padding: 0;
+}
+
+.form-group li {
+    margin-bottom: 0.8rem;
+}
+
+.contact-form {
+    border: 1px solid #b26f00;
+    border-radius: 1rem;
+    background-color: #001a33;
+    color: #d9d9d9;
+    padding: 0.5rem;
+    font-size: 2rem;
+    line-height: 2;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.form-fields input[type= "text"],
+.form-fields input[type= "email"],
+.form-fields input[type= "message"] {
+    box-sizing: border-box;
+    background-color: #d9d9d9;
+    color: #001a33;
+    border: 1px solid #001a33;
+    max-height: 7rem;
+    line-height: 1.35;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+    white-space: nowrap;
+    overflow: hidden;
+    flex: 1 0 240px;
+}
+
+.form-group {
+    padding: 1.2rem;
+}
+
+.form-group h3 {
+    text-align: center;
+}
+
+.form-fields label {
+    display: block;
+}
+
+.form-fields textarea {
+    display: block;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10em;
+    line-height: 1.35;
+    background-color: #d9d9d9;
+    color: #001a33;
+    font-weight: bold;
+    overflow: auto;
+    font-size: 1.5rem;
+}
+/* making the forms responsive */
+.form-fields li {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.form-fields label {
+    flex: 1 0 5rem;
+    max-width: 200px;
+}
+
+.form-submit .btn.btn-submit {
+    flex: 0 0 100%;
+    align-self: center;
+    width: 100%;
+    padding: 1rem 4rem 1rem 4rem;
+}
+
+.form-submit button:hover {
+    background-color: #66ffc5
+}
+
+.form-group {
+    flex: 1 0 100%;
+}
+
+.contact-us-section .get-in-touch {
+    color: #001a33;
+    margin: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+/*-------------------------- SOCIAL MEDIA ICONS ------------------------*/
+.social {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+    padding: 4rem;
+}
+
+.social-media {
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;  
+}
+
+.social-media a {
+    display: inline-flex;
+    width: 6rem;
+    height: 6rem;
+    background-color: #001a33;
+    color: #e6e6e6;
+    border-radius: 50%;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    font-size: 4rem;
+    margin-left: 4rem;
+    margin-bottom: 2rem;
+}
+
+.social-media a:hover {
+    background-color: #66ffc5;
+    color: #001a33;
+}
+
+.social h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #001a33;
+    margin-bottom: 2rem;
+}
+/*----------------------------LIVE MUSIC PAGES -----------------*/
+.title-events {
+    background-color: #d9d9d9;
+}
+.event-text {
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+    color: #001a33;
+}
+
+.title-events h1 {
+    color: #001a33;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.event-text p {
+    font-size: 2rem;
+    padding: 1rem;
+}
+
+.home-events {
+    background-color: #001a33;
+    color: #cccccc;
+    padding: 1rem;
+}
+
+.event-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.event-descriptions p {
+    padding: 1rem;
+}
+
+.event-descriptions h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.event-descriptions img{
+    padding: 1rem;
+    display: block;
+}
+
+.event-descriptions a .btn{
+    margin: 2rem 5rem 2rem 5rem;
+}
+
+.open-times {
+    background-color: #cccccc;
+    color: #001a33;
+}
+.opening-times {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.opening-times h4 {
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 0;
+    text-align: center;
+}
+.opening-times ul {
+    list-style-type: none;
+    display: block;
+    padding: 0.5rem 0 0.5rem 0;
+    text-align: center;
+}
+
+.opening-times ul li {
+    font-size: 1.5rem;
+}
+
+.photograph-section {
+    background-color: #001a33;
+    color: #cccccc;
+}
+
+.photograph-section h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem;
+}
+
+.event-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0;
+}
+
+.event-photos {
+    list-style-type: none;
+    margin: 0;
+    padding: 1rem;
+}
+
+.event-photos img {
+    padding: 1rem;
+}
+
+
+.event-photographs img {
+    padding: 1rem;
+    margin: 0;
+}
+
+.event-video {
+    padding: 2rem;
+}
+
+.event-video video {
+    height: auto;
+}
+
+.photograph-section h3 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 3rem 3rem 1rem 3rem;
+}
+
+@media screen and (min-width: 650px) {
+    .waxy-video {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+    }
+
+    .waxy-video video {
+        grid-column: 3 / 7;
+    }
+
+    .event-descriptions a {
+        margin: 0;
+    }
+
+    .opening-times {
+        max-width: 1000px;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+
+    .responsive-map iframe {
+        max-width: 100%;
+        padding: 1rem;
+        align-self: center;
+        margin: 1rem;
+    }
+}
+@media screen and (min-width: 760px) {
+    .events {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .event-descriptions {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-gap: 1rem;
+    }
+
+    .event-descriptions h3 {
+        grid-column: 1 / 5;
+        text-align: left;
+        padding-left: 1rem;
+    }
+
+    .event-descriptions h2 {
+        grid-column: 1 / 5;
+        text-align: left;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+
+    .event-descriptions img {
+        grid-column: 5 / 9;
+        grid-row: 1 / 6;
+    }
+
+    .event-descriptions p {
+        grid-column: 1 / 5;
+
+    }
+    .event-descriptions a {
+        grid-column: 1 / 5;
+        padding-bottom: 1rem;
+    }
+    
+    .event-photos {
+        max-width: 1000px;
+        margin: 0 auto;
+        flex-wrap: nowrap;
+        padding: 1rem;
+        align-self: center;
+    }
+
+    .event-video {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .event-video.large-video {
+        padding: 0 10rem;
+    }
+
+    .photograph-section h3 {
+        font-size: 3rem;
+        text-align: center;
+        padding: 3rem 3rem 1rem 3rem;
+    }
+}
